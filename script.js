@@ -1,0 +1,193 @@
+console.log ('Script Vinculado')
+
+
+
+var buttonCalculate = document.querySelector('#button-calculate')
+
+function hadleButtonClick (){
+
+    calcularSoma ()
+    calcularSubAB()
+    calcularSubBA()
+    multiplicacao()
+    divAB()
+    divBA()
+    potAB()
+    potBA()
+    raizA()
+    raizB()
+    fatorialA()
+    fatorialB()
+    percentAB ()
+    percentBA ()
+    media()
+    
+}
+buttonCalculate.addEventListener ('click', hadleButtonClick)
+
+
+
+
+function calcularSoma() {
+    var soma = document.querySelector ('#soma')
+    var inputA = document.querySelector ('#inputA')
+    var inputB = document.querySelector('#inputB')
+    var valueA = Number(inputA.value)
+    var valueB = Number(inputB.value)  
+    let somaResult = (valueA + valueB) 
+
+   return soma.textContent = somaResult
+}
+function calcularSubAB() {
+    var subAB = document.querySelector ("#sub-a-b")
+    var inputA = document.querySelector ('#inputA')
+    var inputB = document.querySelector('#inputB')
+    var valueA = Number(inputA.value)
+    var valueB = Number(inputB.value)  
+    let subABResult = (valueA - valueB) 
+
+   return subAB.textContent = subABResult
+
+}
+function calcularSubBA() {
+    var subBA = document.querySelector ("#sub-b-a")
+    var inputA = document.querySelector ('#inputA')
+    var inputB = document.querySelector('#inputB')
+    var valueA = Number(inputA.value)
+    var valueB = Number(inputB.value)  
+    let subBAResult = (valueB - valueA) 
+
+   return subBA.textContent = subBAResult
+
+}
+function multiplicacao() {
+    var multiplicacao = document.querySelector ("#multiplicacao")
+    var inputA = document.querySelector ('#inputA')
+    var inputB = document.querySelector('#inputB')
+    var valueA = Number(inputA.value)
+    var valueB = Number(inputB.value)  
+    let multiplicacaoResult = (valueA * valueB) 
+
+   return multiplicacao.textContent = multiplicacaoResult
+
+}
+function divAB() {
+    var divAB = document.querySelector ("#divA-B")
+    var inputA = document.querySelector ('#inputA')
+    var inputB = document.querySelector('#inputB')
+    var valueA = Number(inputA.value)
+    var valueB = Number(inputB.value)  
+    let divABResult = (valueA / valueB) 
+
+   return divAB.textContent = divABResult
+
+}
+function divBA() {
+    var divBA = document.querySelector ("#divB-A")
+    var inputA = document.querySelector ('#inputA')
+    var inputB = document.querySelector('#inputB')
+    var valueA = Number(inputA.value)
+    var valueB = Number(inputB.value)  
+    let divBAResult = (valueB / valueA) 
+
+   return divBA.textContent = divBAResult
+
+}
+function potAB() {
+    var potAB = document.querySelector ("#potAB")
+    var inputA = document.querySelector ('#inputA')
+    var inputB = document.querySelector('#inputB')
+    var valueA = Number(inputA.value)
+    var valueB = Number(inputB.value)  
+    let potABResult = (valueA ** valueB) 
+
+   return potAB.textContent = potABResult
+
+}
+function potBA() {
+    var potBA = document.querySelector ("#potBA")
+    var inputA = document.querySelector ('#inputA')
+    var inputB = document.querySelector('#inputB')
+    var valueA = Number(inputA.value)
+    var valueB = Number(inputB.value)  
+    let potBAResult = (valueB ** valueA) 
+
+   return potBA.textContent = potBAResult
+
+}
+function raizA() {
+    var raizA = document.querySelector ("#raizA")
+    var inputA = document.querySelector ('#inputA')
+    var inputB = document.querySelector('#inputB')
+    var valueA = Number(inputA.value)
+    var valueB = Number(inputB.value)  
+    let raizAResult = (Math.sqrt(valueA)) 
+
+   return raizA.textContent = raizAResult
+
+}
+function raizB() {
+    var raizB = document.querySelector ("#raizB")
+    var inputA = document.querySelector ('#inputA')
+    var inputB = document.querySelector('#inputB')
+    var valueA = Number(inputA.value)
+    var valueB = Number(inputB.value)  
+    let raizBResult = (Math.sqrt(valueB)) 
+
+   return raizB.textContent = raizBResult
+
+}
+const fatorial = n => {
+    if (n > 1) {
+        return n * fatorial(n - 1)
+    }
+    return n
+}
+
+function fatorialA() {
+    var fatorialA = document.querySelector ("#fatorialA")
+    var inputA = document.querySelector ('#inputA')
+    var inputB = document.querySelector('#inputB')
+    var valueA = Number(inputA.value)
+    var resultFatorialA = fatorial(valueA)
+     return fatorialA.textContent = resultFatorialA 
+    }
+function fatorialB() {
+        var fatorialB = document.querySelector ("#fatorialB")
+        var inputA = document.querySelector ('#inputA')
+        var inputB = document.querySelector('#inputB')
+        var valueB = Number(inputB.value)
+        var resultFatorialB = fatorial(valueB)
+         return fatorialB.textContent = resultFatorialB         
+        }
+function percentAB() {
+            var percentAB = document.querySelector ("#percentAB")
+            var inputA = document.querySelector ('#inputA')
+            var inputB = document.querySelector('#inputB')
+            var valueA = Number(inputA.value)
+            var valueB = Number(inputB.value)  
+            let percentABResult = (valueA / valueB)*100
+        
+           return percentAB.textContent = percentABResult+"%"
+}
+function percentBA () {
+            var percentBA = document.querySelector ("#percentBA")
+            var inputA = document.querySelector ('#inputA')
+            var inputB = document.querySelector('#inputB')
+            var valueA = Number(inputA.value)
+            var valueB = Number(inputB.value)  
+            let percentBAResult = (valueB / valueA)*100
+        
+           return percentBA.textContent = percentBAResult+"%"
+}
+function media() {
+    var media = document.querySelector ("#media")
+    var inputA = document.querySelector ('#inputA')
+    var inputB = document.querySelector('#inputB')
+    var valueA = Number(inputA.value)
+    var valueB = Number(inputB.value)  
+    let mediaResult = ((valueA+valueB) / 2 ) 
+
+   return media.textContent = mediaResult
+
+}
