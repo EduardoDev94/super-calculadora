@@ -46,7 +46,7 @@ function calcularSubAB() {
     var valueB = Number(inputB.value)  
     let subABResult = (valueA - valueB) 
 
-   return subAB.textContent = subABResult
+   return subAB.textContent = subABResult.toFixed(2)
 
 }
 function calcularSubBA() {
@@ -57,7 +57,7 @@ function calcularSubBA() {
     var valueB = Number(inputB.value)  
     let subBAResult = (valueB - valueA) 
 
-   return subBA.textContent = subBAResult
+   return subBA.textContent = subBAResult.toFixed(2)
 
 }
 function multiplicacao() {
@@ -68,7 +68,7 @@ function multiplicacao() {
     var valueB = Number(inputB.value)  
     let multiplicacaoResult = (valueA * valueB) 
 
-   return multiplicacao.textContent = multiplicacaoResult
+   return multiplicacao.textContent = multiplicacaoResult.toFixed(2)
 
 }
 function divAB() {
@@ -79,7 +79,7 @@ function divAB() {
     var valueB = Number(inputB.value)  
     let divABResult = (valueA / valueB) 
 
-   return divAB.textContent = divABResult
+   return divAB.textContent = divABResult.toFixed(2)
 
 }
 function divBA() {
@@ -90,7 +90,7 @@ function divBA() {
     var valueB = Number(inputB.value)  
     let divBAResult = (valueB / valueA) 
 
-   return divBA.textContent = divBAResult
+   return divBA.textContent = divBAResult.toFixed(2)
 
 }
 function potAB() {
@@ -101,7 +101,7 @@ function potAB() {
     var valueB = Number(inputB.value)  
     let potABResult = (valueA ** valueB) 
 
-   return potAB.textContent = potABResult
+   return potAB.textContent = potABResult.toFixed(2)
 
 }
 function potBA() {
@@ -112,7 +112,7 @@ function potBA() {
     var valueB = Number(inputB.value)  
     let potBAResult = (valueB ** valueA) 
 
-   return potBA.textContent = potBAResult
+   return potBA.textContent = potBAResult.toFixed(2)
 
 }
 function raizA() {
@@ -123,7 +123,7 @@ function raizA() {
     var valueB = Number(inputB.value)  
     let raizAResult = (Math.sqrt(valueA)) 
 
-   return raizA.textContent = raizAResult
+   return raizA.textContent = raizAResult.toFixed(2)
 
 }
 function raizB() {
@@ -134,7 +134,7 @@ function raizB() {
     var valueB = Number(inputB.value)  
     let raizBResult = (Math.sqrt(valueB)) 
 
-   return raizB.textContent = raizBResult
+   return raizB.textContent = raizBResult.toFixed(2)
 
 }
 const fatorial = n => {
@@ -168,7 +168,7 @@ function percentAB() {
             var valueB = Number(inputB.value)  
             let percentABResult = (valueA / valueB)*100
         
-           return percentAB.textContent = percentABResult+"%"
+           return percentAB.textContent = percentABResult.toFixed(2) +"%"
 }
 function percentBA () {
             var percentBA = document.querySelector ("#percentBA")
@@ -178,7 +178,7 @@ function percentBA () {
             var valueB = Number(inputB.value)  
             let percentBAResult = (valueB / valueA)*100
         
-           return percentBA.textContent = percentBAResult+"%"
+           return percentBA.textContent = percentBAResult.toFixed(2)+"%"
 }
 function media() {
     var media = document.querySelector ("#media")
@@ -188,6 +188,6 @@ function media() {
     var valueB = Number(inputB.value)  
     let mediaResult = ((valueA+valueB) / 2 ) 
 
-   return media.textContent = mediaResult
+   return media.textContent = mediaResult.toFixed(2)
 
 }
